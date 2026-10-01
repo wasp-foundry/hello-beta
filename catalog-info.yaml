@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-beta
+  description: "Second acceptance app"
+  annotations:
+    github.com/project-slug: wasp-foundry/hello-beta
+    backstage.io/kubernetes-id: hello-beta
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/team-beta"
+  dependsOn:
+    - resource:default/development
+    - resource:default/production
