@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: hello-beta
-  description: "Second acceptance app"
+  name: notification-api
+  description: "Consumes greeting events from a queue and writes notification reports"
   annotations:
-    github.com/project-slug: wasp-foundry/hello-beta
+    github.com/project-slug: wasp-foundry/notification-api
     backstage.io/techdocs-ref: dir:.
-    backstage.io/kubernetes-id: hello-beta
+    backstage.io/kubernetes-id: notification-api
 spec:
   type: service
   lifecycle: experimental

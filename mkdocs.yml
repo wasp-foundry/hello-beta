@@ -1,5 +1,5 @@
-site_name: hello-beta
-site_description: hello-beta service docs, published in Backstage TechDocs
+site_name: notification-api
+site_description: notification-api service docs, published in Backstage TechDocs
 nav:
   - Overview: index.md
   - Runbook: runbook.md
