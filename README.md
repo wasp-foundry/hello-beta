@@ -1,13 +1,13 @@
-# hello-beta
+# notification-api
 
-Second acceptance app
+Consumes greeting events from a queue and writes notification reports
 
 FastAPI service created from the wasp-idp Backstage template `python-service`.
 
 - `GET /` — app name and a greeting
 - `GET /healthz` — liveness/readiness
 
-Every push to `main` runs the tests, publishes `ghcr.io/wasp-foundry/hello-beta:<sha>` and bumps the tag in [`wasp-foundry/gitops`](https://github.com/wasp-foundry/gitops/tree/main/apps/hello-beta), which ArgoCD deploys.
+Every push to `main` runs the tests, publishes `ghcr.io/wasp-foundry/notification-api:<sha>` and bumps the tag in [`wasp-foundry/gitops`](https://github.com/wasp-foundry/gitops/tree/main/apps/notification-api), which ArgoCD deploys.
 
 ## Local run
 
